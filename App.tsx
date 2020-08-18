@@ -1,12 +1,12 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import ChatScreen from './src/Pages/ChatScreen';
 
+import AppStack from './src/Router/AppStack';
 
 export default function App() {
   return (
     <>
-      <ChatScreen />
+      <AppStack />
       <StatusBar style="dark" />
     </>
   );

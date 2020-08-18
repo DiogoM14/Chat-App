@@ -3,12 +3,12 @@ import React from 'react';
 import { Container } from './styles';
 import { Text } from 'react-native';
 
-const ChatScreen: React.FC = () => {
+const LoginScreen: React.FC = () => {
   return (
     <Container>
-      <Text>Hello worldddd</Text>
+      <Text>Hello </Text>
     </Container>
   );
 }
 
-export default ChatScreen;
+export default LoginScreen;
