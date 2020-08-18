@@ -1,14 +1,15 @@
 import React from 'react';
 
 import { Container } from './styles';
-import { Text } from 'react-native';
 
-const LoginScreen: React.FC = () => {
+import LandingHeader from '../../Components/LandingHeader';
+
+const Login: React.FC = () => {
   return (
     <Container>
-      <Text>Hello </Text>
+      <LandingHeader title={'Username'} />
     </Container>
   );
 }
 
-export default LoginScreen;
+export default Login;
