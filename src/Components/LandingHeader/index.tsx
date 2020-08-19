@@ -1,18 +1,18 @@
 import React from 'react';
+import { ImageURISource } from 'react-native';
 
-import { Container, Circle, LandingImage, WelcomeText } from './styles';
-
-import LandingBackground from '../../assets/landing-image.png';
+import { Container, Circle, WelcomeText, LandingImage } from './styles';
 
 interface LandingHeaderProps {
   title: string;
+  imgUrl: ImageURISource;
 }
 
-const LandingHeader: React.FC<LandingHeaderProps> = ({ title }) => {
+const LandingHeader: React.FC<LandingHeaderProps> = ({ title, imgUrl }) => {
   return (
     <Container>
       <Circle />
-      <LandingImage source={LandingBackground} />
+      <LandingImage source={imgUrl} />
 
       <WelcomeText>{title}</WelcomeText>
     </Container>

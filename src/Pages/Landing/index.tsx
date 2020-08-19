@@ -6,6 +6,10 @@ import { Feather } from '@expo/vector-icons';
 
 import LandingHeader from '../../Components/LandingHeader';
 
+import LandingPageImage from '../../assets/landing-image.png';
+
+
+
 const Landing: React.FC = () => {
   const { navigate } = useNavigation();
 
@@ -15,7 +19,7 @@ const Landing: React.FC = () => {
   
   return (
     <Container>
-      <LandingHeader title={'Bem-vindo ao Live Chat'} />
+      <LandingHeader title={'Bem-vindo ao Live Chat'} imgUrl={LandingPageImage} />
 
       <GetStartButton onPress={handleNavigateToChat}>
         <ButtonText>Começar</ButtonText>
