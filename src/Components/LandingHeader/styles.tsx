@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { RectButton } from 'react-native-gesture-handler';
+import { LandingHeaderProps } from './index';
 
 export const Container = styled.View`
   background: #f4f5f7;
@@ -15,7 +15,7 @@ export const Circle = styled.View`
   top: -200px;
 `;
 
-export const LandingImage = styled.Image`
+export const LandingImage = styled.Image<LandingHeaderProps>`
   width: 250px;
   height: 300px;
   margin-top: 64px;

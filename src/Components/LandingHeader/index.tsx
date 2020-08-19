@@ -3,12 +3,13 @@ import { ImageURISource } from 'react-native';
 
 import { Container, Circle, WelcomeText, LandingImage } from './styles';
 
-interface LandingHeaderProps {
+export interface LandingHeaderProps {
   title: string;
   imgUrl: ImageURISource;
 }
 
 const LandingHeader: React.FC<LandingHeaderProps> = ({ title, imgUrl }) => {
+
   return (
     <Container>
       <Circle />
